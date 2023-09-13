@@ -3,10 +3,7 @@ from transformers import Trainer, TrainingArguments
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 block_size = 512
-num_epochs = 50
 output_dir = "/content/drive/MyDrive/GPT2_Results"
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
-model = GPT2LMHeadModel.from_pretrained('gpt2')
 save_steps = 100
 
 def generate_text(sequence, max_length):
